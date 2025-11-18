@@ -35,7 +35,7 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-white mb-6">
+              <h1 className="text-xl text-gray-100 mb-8">
                 Harness Decades of Experience. On-Demand.
               </h1>
               <p className="text-xl text-gray-100 mb-8">
@@ -49,18 +49,18 @@ export function Home() {
                   </Button>
                 </Link>
                 <Link to="/for-experts">
-                  <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="bg-white text-[#1e3a8a] hover:bg-gray-100 w-full sm:w-auto">
                     Share Your Expertise
                   </Button>
                 </Link>
               </div>
               <div className="mt-12 grid grid-cols-3 gap-8">
                 <div>
-                  <div className="text-3xl mb-1">500+</div>
+                  <div className="text-3xl mb-1">1+</div>
                   <div className="text-sm text-gray-200">Expert Professionals</div>
                 </div>
                 <div>
-                  <div className="text-3xl mb-1">150+</div>
+                  <div className="text-3xl mb-1">5+</div>
                   <div className="text-sm text-gray-200">Companies Trust Us</div>
                 </div>
                 <div>
@@ -84,7 +84,7 @@ export function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[#1e3a8a] mb-4">How It Works</h2>
+            <h2 className="text-[#1e3a8a] mb-4 text-2xl font-semibold italic">How It Works</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Simple, transparent, and designed for results
             </p>
@@ -95,7 +95,7 @@ export function Home() {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-center gap-3 mb-6">
                 <Building2 className="w-8 h-8 text-[#1e3a8a]" />
-                <h3 className="text-[#1e3a8a]">For Companies</h3>
+                <h3 className="text-[#1e3a8a] text-2xl font-semibold">For Companies</h3>
               </div>
               <div className="space-y-6">
                 <div className="flex gap-4">
@@ -137,7 +137,7 @@ export function Home() {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-center gap-3 mb-6">
                 <Users className="w-8 h-8 text-[#0f766e]" />
-                <h3 className="text-[#0f766e]">For Experts</h3>
+                <h3 className="text-[#0f766e] text-2xl font-semibold">For Experts</h3>
               </div>
               <div className="space-y-6">
                 <div className="flex gap-4">
@@ -183,8 +183,8 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-8 border-2 hover:border-[#1e3a8a] transition-colors">
-              <Building2 className="w-12 h-12 text-[#1e3a8a] mb-4" />
-              <h3 className="text-[#1e3a8a] mb-4">For Companies</h3>
+              <Building2 className="w-12 h-12 text-[#1e3a8a] mb-2" />
+              <h3 className="text-[#1e3a8a] mb-3 text-2xl font-semibold">For Companies</h3>
               <p className="text-gray-600 mb-6">
                 Access flexible, world-class talent. Get expert insights, solve complex problems, and avoid high recruitment costs.
               </p>
@@ -205,8 +205,8 @@ export function Home() {
             </Card>
 
             <Card className="p-8 border-2 hover:border-[#0f766e] transition-colors">
-              <Users className="w-12 h-12 text-[#0f766e] mb-4" />
-              <h3 className="text-[#0f766e] mb-4">For Experts</h3>
+              <Users className="w-12 h-12 text-[#0f766e] mb-2" />
+              <h3 className="text-[#0f766e] mb-3 text-2xl font-semibold">For Experts</h3>
               <p className="text-gray-600 mb-6">
                 Your experience is in-demand. Monetize your skills, set your own schedule, and mentor the next generation.
               </p>
@@ -227,8 +227,8 @@ export function Home() {
             </Card>
 
             <Card className="p-8 border-2 hover:border-[#d4af37] transition-colors">
-              <GraduationCap className="w-12 h-12 text-[#d4af37] mb-4" />
-              <h3 className="text-[#1e3a8a] mb-4">For Mentees</h3>
+              <GraduationCap className="w-12 h-12 text-[#d4af37] mb-2" />
+              <h3 className="text-[#1e3a8a] mb-3 text-2xl font-semibold">For Mentees</h3>
               <p className="text-gray-600 mb-6">
                 Learn from the best. Get 1-on-1 guidance from seasoned leaders who have been there and done that.
               </p>
@@ -255,7 +255,7 @@ export function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-[#1e3a8a] mb-4">Featured Experts</h2>
+            <h2 className="text-[#1e3a8a] mb-3 text-2xl font-semibold">Featured Experts</h2>
             <p className="text-xl text-gray-600">
               World-class professionals ready to help you succeed
             </p>
@@ -308,7 +308,7 @@ export function Home() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-[#1e3a8a] mb-4">Browse by Industry</h2>
+            <h2 className="text-[#1e3a8a] mb-3 text-2xl font-semibold">Browse by Industry</h2>
             <p className="text-xl text-gray-600">
               Find experts in your field
             </p>
@@ -335,7 +335,7 @@ export function Home() {
       <section className="py-20 bg-gradient-to-br from-[#1e3a8a] to-[#0f766e] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-white mb-4">Trusted by Industry Leaders</h2>
+            <h2 className="text-white mb-3 text-2xl font-semibold">Trusted by Industry Leaders</h2>
             <p className="text-xl text-gray-100">
               See what our community has to say
             </p>
@@ -359,7 +359,7 @@ export function Home() {
       {/* CTA Section */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[#1e3a8a] mb-6">Ready to Get Started?</h2>
+          <h2 className="text-[#1e3a8a] mb-6 text-2xl font-semibold">Ready to Get Started?</h2>
           <p className="text-xl text-gray-600 mb-8">
             Join thousands of companies and experts already using ExpertBridge
           </p>
