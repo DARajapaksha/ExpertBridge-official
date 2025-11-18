@@ -3,11 +3,11 @@ import { Button } from '../components/ui/button';
 import { Card } from '../components/ui/card';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { mockExperts, industries, testimonials } from '../data/mockData';
-import { 
-  ArrowRight, 
-  CheckCircle2, 
-  Building2, 
-  Users, 
+import {
+  ArrowRight,
+  CheckCircle2,
+  Building2,
+  Users,
   GraduationCap,
   Settings,
   HeartPulse,
@@ -43,13 +43,13 @@ export function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/browse-experts">
-                  <Button size="lg" className="bg-white text-[#1e3a8a] hover:bg-gray-100 w-full sm:w-auto">
+                  <Button size="lg" className="bg-white text-primary hover:bg-gray-100 w-full sm:w-auto">
                     Find Your Expert
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
                 <Link to="/for-experts">
-                  <Button size="lg" variant="outline" className="bg-white text-[#1e3a8a] hover:bg-gray-100 w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="bg-white text-primary hover:bg-gray-100 w-full sm:w-auto">
                     Share Your Expertise
                   </Button>
                 </Link>
@@ -84,7 +84,7 @@ export function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[#1e3a8a] mb-4 text-2xl font-semibold italic">How It Works</h2>
+            <h2 className="text-primary mb-4 text-2xl font-semibold italic">How It Works</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Simple, transparent, and designed for results
             </p>
@@ -94,12 +94,12 @@ export function Home() {
             {/* For Companies */}
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-center gap-3 mb-6">
-                <Building2 className="w-8 h-8 text-[#1e3a8a]" />
-                <h3 className="text-[#1e3a8a] text-2xl font-semibold">For Companies</h3>
+                <Building2 className="w-8 h-8 text-primary" />
+                <h3 className="text-primary text-2xl font-semibold">For Companies</h3>
               </div>
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-[#1e3a8a] text-white rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center">
                     1
                   </div>
                   <div>
@@ -108,7 +108,7 @@ export function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-[#1e3a8a] text-white rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center">
                     2
                   </div>
                   <div>
@@ -117,7 +117,7 @@ export function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-[#1e3a8a] text-white rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center">
                     3
                   </div>
                   <div>
@@ -127,7 +127,7 @@ export function Home() {
                 </div>
               </div>
               <Link to="/for-companies">
-                <Button className="w-full mt-8 bg-[#1e3a8a] hover:bg-[#1e3a8a]/90">
+                <Button className="w-full mt-8">
                   Learn More for Companies
                 </Button>
               </Link>
@@ -182,9 +182,9 @@ export function Home() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 border-2 hover:border-[#1e3a8a] transition-colors">
-              <Building2 className="w-12 h-12 text-[#1e3a8a] mb-2" />
-              <h3 className="text-[#1e3a8a] mb-3 text-2xl font-semibold">For Companies</h3>
+            <Card className="p-8 border-2 hover:border-primary transition-colors">
+              <Building2 className="w-12 h-12 text-primary mb-2" />
+              <h3 className="text-primary mb-3 text-2xl font-semibold">For Companies</h3>
               <p className="text-gray-600 mb-6">
                 Access flexible, world-class talent. Get expert insights, solve complex problems, and avoid high recruitment costs.
               </p>
@@ -228,7 +228,7 @@ export function Home() {
 
             <Card className="p-8 border-2 hover:border-[#d4af37] transition-colors">
               <GraduationCap className="w-12 h-12 text-[#d4af37] mb-2" />
-              <h3 className="text-[#1e3a8a] mb-3 text-2xl font-semibold">For Mentees</h3>
+              <h3 className="text-primary mb-3 text-2xl font-semibold">For Mentees</h3>
               <p className="text-gray-600 mb-6">
                 Learn from the best. Get 1-on-1 guidance from seasoned leaders who have been there and done that.
               </p>
@@ -255,7 +255,7 @@ export function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-[#1e3a8a] mb-3 text-2xl font-semibold">Featured Experts</h2>
+            <h2 className="text-primary mb-3 text-2xl font-semibold">Featured Experts</h2>
             <p className="text-xl text-gray-600">
               World-class professionals ready to help you succeed
             </p>
@@ -281,11 +281,11 @@ export function Home() {
                       <span className="text-sm text-gray-500">({expert.reviewCount} reviews)</span>
                     </div>
                     <h3 className="mb-1">{expert.name}</h3>
-                    <p className="text-sm text-[#1e3a8a] mb-2">{expert.title}</p>
+                    <p className="text-sm text-primary mb-2">{expert.title}</p>
                     <p className="text-sm text-gray-600 mb-4 line-clamp-2">{expert.tagline}</p>
                     <div className="flex items-center justify-between pt-4 border-t">
                       <span className="text-sm text-gray-500">Starting at</span>
-                      <span className="text-[#1e3a8a]">${expert.hourlyRate}/hr</span>
+                      <span className="text-primary">${expert.hourlyRate}/hr</span>
                     </div>
                   </div>
                 </Card>
@@ -295,7 +295,7 @@ export function Home() {
 
           <div className="text-center">
             <Link to="/browse-experts">
-              <Button size="lg" className="bg-[#1e3a8a] hover:bg-[#1e3a8a]/90">
+              <Button size="lg" className="">
                 View All Experts
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
@@ -308,8 +308,8 @@ export function Home() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-[#1e3a8a] mb-3 text-2xl font-semibold">Browse by Industry</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="text-primary mb-3 text-2xl font-semibold">Browse by Industry</h2>
+            <p className="text-lg text-gray-600">
               Find experts in your field
             </p>
           </div>
@@ -320,9 +320,9 @@ export function Home() {
               return (
                 <Link key={industry.name} to="/browse-experts">
                   <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer text-center h-full">
-                    <Icon className="w-10 h-10 text-[#1e3a8a] mx-auto mb-3" />
-                    <h4 className="text-sm mb-1">{industry.name}</h4>
-                    <p className="text-xs text-gray-500">{industry.count} experts</p>
+                    <Icon className="w-10 h-10 text-primary mx-auto mb-3" />
+                    <h4 className="text-lg mb-1">{industry.name}</h4>
+                    <p className="text-s text-gray-500">{industry.count} experts</p>
                   </Card>
                 </Link>
               );
@@ -335,7 +335,7 @@ export function Home() {
       <section className="py-20 bg-gradient-to-br from-[#1e3a8a] to-[#0f766e] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-white mb-3 text-2xl font-semibold">Trusted by Industry Leaders</h2>
+            <h2 className="text-white mb-4 text-3xl font-semibold">Trusted by Industry Leaders</h2>
             <p className="text-xl text-gray-100">
               See what our community has to say
             </p>
@@ -361,7 +361,7 @@ export function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[#1e3a8a] mb-6 text-2xl font-semibold">Ready to Get Started?</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Join thousands of companies and experts already using ExpertBridge
+            Join thousands of companies and experts already using ElderExpert
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/browse-experts">

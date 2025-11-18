@@ -17,6 +17,9 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
+            <Link to="/dashboard" className="text-gray-700 hover:text-[#1e3a8a] transition-colors">
+              Dashboard
+            </Link>
             <Link to="/browse-experts" className="text-gray-700 hover:text-[#1e3a8a] transition-colors">
               Find Experts
             </Link>
