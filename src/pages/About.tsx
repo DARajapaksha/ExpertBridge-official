@@ -115,13 +115,13 @@ export function About() {
           
           <div className="prose prose-lg mx-auto text-gray-700">
             <p>
-              ExpertBridge was founded in 2023 by a team of entrepreneurs who witnessed firsthand the challenge of finding experienced professionals for critical business needs. At the same time, they saw talented retirees struggling to find meaningful ways to stay engaged and share their expertise.
+              ElderExpert was founded in 2023 by a team of entrepreneurs who witnessed firsthand the challenge of finding experienced professionals for critical business needs. At the same time, they saw talented retirees struggling to find meaningful ways to stay engaged and share their expertise.
             </p>
             <p>
               The idea was simple: create a marketplace that connects these two groups in a way that benefits both. A platform where companies could access world-class expertise on-demand, and where experienced professionals could work on their own terms while making a real impact.
             </p>
             <p>
-              Today, ExpertBridge serves hundreds of companies and professionals across industries including engineering, healthcare, education, finance, and technology. Our community has completed thousands of projects and mentorship sessions, creating value on both sides of every engagement.
+              Today, ElderExpert serves hundreds of companies and professionals across industries including engineering, healthcare, education, finance, and technology. Our community has completed thousands of projects and mentorship sessions, creating value on both sides of every engagement.
             </p>
             <p>
               We're just getting started. Our vision is to become the premier destination for experienced professionals to share their knowledge and for companies to access the expertise they need to thrive.

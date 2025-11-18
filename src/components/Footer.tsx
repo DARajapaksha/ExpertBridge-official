@@ -87,7 +87,7 @@ export function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-300">
-            © 2025 ExpertBridge. All rights reserved.
+            © 2025 ElderExpert. All rights reserved.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <a href="#" className="text-gray-300 hover:text-white transition-colors">

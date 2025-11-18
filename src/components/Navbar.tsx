@@ -12,7 +12,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-gradient-to-br from-[#1e3a8a] to-[#0f766e] rounded-lg" />
-            <span className="text-[#1e3a8a]">ExpertBridge</span>
+            <span className="text-[#1e3a8a]">ElderExpert</span>
           </Link>
 
           {/* Desktop Navigation */}
