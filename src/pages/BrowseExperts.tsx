@@ -60,9 +60,9 @@ useEffect(() => {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <h1 className="text-[#1e3a8a] mb-4 text-2xl font-semibold">Browse Experts</h1>
-          <p className="text-s text-gray-600">
+          <p className="text-sm text-gray-600">
             Find the perfect professional for your project or mentorship needs
           </p>
         </div>
@@ -74,7 +74,7 @@ useEffect(() => {
           <div className="lg:col-span-1">
             <div className="bg-white rounded-lg p-6 sticky top-24">
               <div className="flex items-center justify-between mb-6">
-                <h3 className="text-[#1e3a8a]">Filters</h3>
+                <h3 className="text-primary">Filters</h3>
                 <Button
                   variant="ghost"
                   size="sm"
@@ -187,7 +187,7 @@ useEffect(() => {
                       <div className="flex items-start justify-between mb-3">
                         <div className="flex-1">
                           <h3 className="mb-1">{expert.name}</h3>
-                          <p className="text-sm text-[#1e3a8a]">{expert.title}</p>
+                          <p className="text-sm text-primary">{expert.title}</p>
                         </div>
                         <div className="flex items-center gap-1 bg-[#d4af37]/10 px-2 py-1 rounded">
                           <Star className="w-4 h-4 fill-[#d4af37] text-[#d4af37]" />
@@ -215,7 +215,7 @@ useEffect(() => {
                       <div className="flex items-center justify-between pt-4 border-t">
                         <div>
                           <p className="text-xs text-gray-500">Starting at</p>
-                          <p className="text-[#1e3a8a]">${expert.hourlyRate}/hr</p>
+                          <p className="text-primary">${expert.hourlyRate}/hr</p>
                         </div>
                         <div className="text-right">
                           <p className="text-xs text-gray-500">{expert.reviewCount} reviews</p>
