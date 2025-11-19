@@ -61,7 +61,7 @@ useEffect(() => {
       {/* Header */}
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h1 className="text-[#1e3a8a] mb-4">Browse Experts</h1>
+          <h1 className="text-[#1e3a8a] text-4xl font-bold mb-4">Browse Experts</h1>
           <p className="text-xl text-gray-600">
             Find the perfect professional for your project or mentorship needs
           </p>
