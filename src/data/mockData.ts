@@ -373,7 +373,7 @@ export const industries = [
 export const testimonials = [
   {
     id: '1',
-    quote: 'ElderExpert connected us with a retired aerospace engineer who solved a problem our team had been stuck on for months. The ROI was immediate.',
+    quote: 'ExpertBridge connected us with a retired aerospace engineer who solved a problem our team had been stuck on for months. The ROI was immediate.',
     author: 'Sarah Chen',
     role: 'CEO, AeroTech Solutions',
     company: 'AeroTech Solutions'
@@ -383,7 +383,7 @@ export const testimonials = [
     quote: "As a retired CFO, I love being able to stay engaged with the business world on my own terms. The platform makes it easy to find meaningful projects.",
     author: 'Robert Williams',
     role: 'Former CFO, Fortune 500',
-    company: 'ElderExpert Expert'
+    company: 'ExpertBridge Expert'
   },
   {
     id: '3',
