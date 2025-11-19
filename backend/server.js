@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import experts from "./data/experts.js"; // make sure the path is correct
+import experts from "./data/experts.js";
 
 dotenv.config();
 
@@ -10,12 +10,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Test route
+// test route
 app.get("/", (req, res) => {
-  res.send("Backend is running! 😎");
+  res.send("Backend is running!");
 });
 
-// Experts route
+// API ROUTE
 app.get("/api/experts", (req, res) => {
   res.json(experts);
 });
