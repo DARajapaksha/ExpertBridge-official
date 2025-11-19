@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from '../components/ui/card';
 import { Button } from '../components/ui/button';
@@ -7,45 +7,22 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Slider } from '../components/ui/slider';
 import { Badge } from '../components/ui/badge';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-import { Expert } from '../types/Expert';
+import { mockExperts, industries } from '../data/mockData';
 import { Search, Star, MapPin, Filter } from 'lucide-react';
 
 export function BrowseExperts() {
-  const [experts, setExperts] = useState<Expert[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
-
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedIndustry, setSelectedIndustry] = useState('all');
   const [selectedServiceType, setSelectedServiceType] = useState('all');
-  const [rateRange, setRateRange] = useState<[number, number]>([0, 500]);
+  const [rateRange, setRateRange] = useState([0, 500]);
   const [showFilters, setShowFilters] = useState(false);
 
-  const [industries, setIndustries] = useState<string[]>(['Tech', 'Finance', 'Healthcare']); // replace with backend if needed
-
- useEffect(() => {
-  import('../data/mockData').then(({ mockExperts }) => {
-    setExperts(mockExperts);
-    setLoading(false);
-  });
-}, []);
-useEffect(() => {
-  fetch('http://localhost:5000/api/experts')
-    .then(res => res.json())
-    .then(data => setExperts(data))
-    .catch(() => setError('Failed to load experts'));
-}, []);
-
-
-
-  const filteredExperts = experts.filter((expert: Expert) => {
-    const matchesSearch =
+  const filteredExperts = mockExperts.filter((expert) => {
+    const matchesSearch = 
       expert.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       expert.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       expert.tagline.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      expert.skills.some((skill: string) =>
-        skill.toLowerCase().includes(searchQuery.toLowerCase())
-      );
+      expert.skills.some(skill => skill.toLowerCase().includes(searchQuery.toLowerCase()));
 
     const matchesIndustry = selectedIndustry === 'all' || expert.industry === selectedIndustry;
     const matchesRate = expert.hourlyRate >= rateRange[0] && expert.hourlyRate <= rateRange[1];
@@ -53,15 +30,12 @@ useEffect(() => {
     return matchesSearch && matchesIndustry && matchesRate;
   });
 
-  if (loading) return <p className="text-center py-12">Loading experts...</p>;
-  if (error) return <p className="text-center py-12 text-red-500">{error}</p>;
-
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h1 className="text-[#1e3a8a] text-4xl font-bold mb-4">Browse Experts</h1>
+          <h1 className="text-[#1e3a8a] mb-4">Browse Experts</h1>
           <p className="text-xl text-gray-600">
             Find the perfect professional for your project or mentorship needs
           </p>
@@ -109,9 +83,9 @@ useEffect(() => {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="all">All Industries</SelectItem>
-                      {industries.map((industry: string) => (
-                        <SelectItem key={industry} value={industry}>
-                          {industry}
+                      {industries.map((industry) => (
+                        <SelectItem key={industry.name} value={industry.name}>
+                          {industry.name}
                         </SelectItem>
                       ))}
                     </SelectContent>
@@ -148,6 +122,22 @@ useEffect(() => {
                   />
                 </div>
 
+                {/* Years of Experience */}
+                <div>
+                  <label className="text-sm text-gray-700 mb-2 block">Minimum Experience</label>
+                  <Select defaultValue="0">
+                    <SelectTrigger>
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="0">Any</SelectItem>
+                      <SelectItem value="10">10+ years</SelectItem>
+                      <SelectItem value="20">20+ years</SelectItem>
+                      <SelectItem value="30">30+ years</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
                 <Button 
                   variant="outline" 
                   className="w-full"
@@ -170,10 +160,21 @@ useEffect(() => {
               <p className="text-gray-600">
                 {filteredExperts.length} expert{filteredExperts.length !== 1 ? 's' : ''} found
               </p>
+              <Select defaultValue="rating">
+                <SelectTrigger className="w-48">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="rating">Highest Rated</SelectItem>
+                  <SelectItem value="reviews">Most Reviews</SelectItem>
+                  <SelectItem value="price-low">Price: Low to High</SelectItem>
+                  <SelectItem value="price-high">Price: High to Low</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              {filteredExperts.map((expert: Expert) => (
+              {filteredExperts.map((expert) => (
                 <Link key={expert.id} to={`/expert/${expert.id}`}>
                   <Card className="overflow-hidden hover:shadow-xl transition-all cursor-pointer h-full">
                     <div className="aspect-[16/9] overflow-hidden">
@@ -205,7 +206,7 @@ useEffect(() => {
                       </div>
 
                       <div className="flex flex-wrap gap-2 mb-4">
-                        {expert.skills.slice(0, 3).map((skill: string, index: number) => (
+                        {expert.skills.slice(0, 3).map((skill, index) => (
                           <Badge key={index} variant="secondary" className="text-xs">
                             {skill}
                           </Badge>

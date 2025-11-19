@@ -255,7 +255,7 @@ export function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-primary mb-3 text-2xl font-semibold">Featured Experts</h2>
+            <h2 className="text-primary mb-3 text-3xl font-semibold">Featured Experts</h2>
             <p className="text-xl text-gray-600">
               World-class professionals ready to help you succeed
             </p>
@@ -308,7 +308,7 @@ export function Home() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-primary mb-3 text-2xl font-semibold">Browse by Industry</h2>
+            <h2 className="text-primary mb-3 text-3xl font-semibold">Browse by Industry</h2>
             <p className="text-lg text-gray-600">
               Find experts in your field
             </p>
@@ -359,7 +359,7 @@ export function Home() {
       {/* CTA Section */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[#1e3a8a] mb-6 text-2xl font-semibold">Ready to Get Started?</h2>
+          <h2 className="text-[#1e3a8a] mb-6 text-3xl font-semibold">Ready to Get Started?</h2>
           <p className="text-xl text-gray-600 mb-8">
             Join thousands of companies and experts already using ElderExpert
           </p>
