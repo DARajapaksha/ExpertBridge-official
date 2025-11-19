@@ -35,8 +35,8 @@ export function BrowseExperts() {
       {/* Header */}
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h1 className="text-[#1e3a8a] mb-4">Browse Experts</h1>
-          <p className="text-xl text-gray-600">
+          <h1 className="text-[#1e3a8a] mb-4 text-2xl font-semibold">Browse Experts</h1>
+          <p className="text-s text-gray-600">
             Find the perfect professional for your project or mentorship needs
           </p>
         </div>
