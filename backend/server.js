@@ -1,0 +1,24 @@
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import experts from "./data/experts.js"; // make sure the path is correct
+
+dotenv.config();
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// Test route
+app.get("/", (req, res) => {
+  res.send("Backend is running! 😎");
+});
+
+// Experts route
+app.get("/api/experts", (req, res) => {
+  res.json(experts);
+});
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
